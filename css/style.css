@@ -1,0 +1,17 @@
+.blue {
+    color: #0000FF;
+}
+
+.orange {
+    color: #FFA500;
+}
+
+.green {
+    color: green;
+}
+
+.box {
+    height: 100px;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+}

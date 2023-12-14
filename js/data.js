@@ -127,7 +127,7 @@ for (let i = 0; i < icons.length; i++) {
 	const boxElement = document.createElement('div')
 	
 	// All'elemento della DOM aggiungo le classi
-	boxElement.classList.add('box', 'border', 'border-black', 'p-3', 'm-3')
+	boxElement.classList.add('box', 'border', 'border-3', 'p-3', 'm-4', 'shadow')
 	
 	// Salvo in una variabile col selettore il container nella DOM
 	const containerElement = document.querySelector('.container')
@@ -141,8 +141,8 @@ for (let i = 0; i < icons.length; i++) {
 	// Ad ogni box tramite append inserisco l'icona
 	boxElement.append(iconElement)
 	
-	// Stampo in pagina l'icona e aggiungo delle classi
-	iconElement.classList.add(icon.family, icon.prefix + icon.name, 'd-block', 'text-center')
+	// Stampo in pagina l'icona, aggiungo delle classi e i colori relativi
+	iconElement.classList.add(icon.family, icon.prefix + icon.name, 'd-block', 'text-center', icon.color, 'fs-1')
 	
 	// Creo lo span per il nome dell'icona
 	const spanElement = document.createElement('span')
@@ -152,4 +152,7 @@ for (let i = 0; i < icons.length; i++) {
 
 	// Stampo il nome di ogni icona
 	spanElement.innerText = icon.name
+
+	// Aggiungo le classi agli span 
+	spanElement.classList.add('text-uppercase', 'd-flex', 'justify-content-center', 'fw-bold')
 }
